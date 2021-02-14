@@ -22,3 +22,20 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Heroku Python
+
+```
+
+$ pip install flask
+$ pip install gunicorn
+
+Create a requirements.txt file with all of the modules:
+
+$ pip freeze > requirements.txt
+
+Create Procfile file with
+
+$ web: gunicorn app:app
+
+```

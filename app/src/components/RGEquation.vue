@@ -1,12 +1,22 @@
 <template>
-  <h1>Question</h1>
+  <h1>Equation</h1>
+  <span>{{ formula }}</span>
 </template>
 
 <script>
 export default {
-  name: "Question",
+  name: "RGEquation",
   props: {
-    msg: String
+  },
+  mounted(){
+    if (window.MathJax){
+      window.MathJax.typeset();
+    }
+  },
+  data() {
+    return {
+      formula: '$$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$'
+    };
   }
 };
 </script>

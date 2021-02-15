@@ -1,17 +1,17 @@
 <template>
   <div class="home">
-    <Question msg=""/>
+    <RGEquation/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Question from "@/components/Question.vue";
+import RGEquation from "@/components/RGEquation.vue";
 
 export default {
   name: "Home",
   components: {
-    Question
+    RGEquation
   }
 };
 </script>

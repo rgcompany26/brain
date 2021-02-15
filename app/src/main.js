@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 import PrimeVue from "primevue/config";
 import Button from "primevue/button";
+import VueMathjax from 'vue-mathjax'
 
 import "primevue/resources/themes/saga-blue/theme.css";
 import "primevue/resources/primevue.min.css";
@@ -13,5 +14,6 @@ createApp(App)
 	.use(store)
 	.use(router)
 	.use(PrimeVue)
+	.use(VueMathjax)
 	.component("Button", Button)
 	.mount("#app");

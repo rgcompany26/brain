@@ -15,7 +15,12 @@ export default {
   },
   data() {
     return {
-      formula: '$$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$'
+      formula: `
+  Sea la siguiente ecuación un ejemplo de MathJax:
+  \\begin{align}
+  a_1& =b_1+c_1\\\\
+  a_2& =b_2+c_2-d_2+e_2
+  \\end{align}`
     };
   }
 };
